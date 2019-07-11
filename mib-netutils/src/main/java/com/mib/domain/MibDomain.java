@@ -4,6 +4,8 @@ import org.apache.commons.net.util.SubnetUtils;
 import org.apache.commons.validator.routines.DomainValidator;
 import org.apache.commons.validator.routines.InetAddressValidator;
 
+import static org.apache.commons.lang3.StringUtils.isBlank;
+
 public enum MibDomain {
     ;
 

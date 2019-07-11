@@ -5,4 +5,4 @@
 
 mib-netutils is a set of utilities that are not already present in Apache Domain Validator or Apache SubnetUtils
 
-Note: depend on Apache Domain Validator && Apache SubnetUtils
+Note: depend on Apache Domain Validator && Apache SubnetUtils && Apache Commons Lang
