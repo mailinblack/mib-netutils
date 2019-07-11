@@ -31,7 +31,7 @@ pipeline {
         stage('[Build] - Tests + Sonar') {
             steps {
 
-                dir('mib-jcl-common') {
+                dir('mib-netutils') {
                     sh "mvn -Dsonar.host.url=http://10.1.126.9:9000 test sonar:sonar"
                 }
 
