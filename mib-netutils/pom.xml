@@ -19,6 +19,12 @@
           3rd parties dependencies
         -->
 
+        <dependency>
+            <groupId>dnsjava</groupId>
+            <artifactId>dnsjava</artifactId>
+            <version>2.1.6</version>
+        </dependency>
+
         <!-- https://mvnrepository.com/artifact/commons-net/commons-net -->
         <dependency>
             <groupId>commons-net</groupId>
@@ -38,8 +44,6 @@
             <artifactId>commons-lang3</artifactId>
             <version>3.9</version>
         </dependency>
-
-
 
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
@@ -112,6 +116,11 @@
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.xbill</groupId>
+            <artifactId>dns</artifactId>
+            <version>2.0.8</version>
         </dependency>
 
     </dependencies>

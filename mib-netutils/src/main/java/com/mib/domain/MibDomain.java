@@ -3,14 +3,26 @@ package com.mib.domain;
 import org.apache.commons.net.util.SubnetUtils;
 import org.apache.commons.validator.routines.DomainValidator;
 import org.apache.commons.validator.routines.InetAddressValidator;
+import org.xbill.DNS.*;
+
+import java.net.UnknownHostException;
 
 import static org.apache.commons.lang3.StringUtils.isBlank;
 
 public enum MibDomain {
     ;
 
+    public static String getFirstTxtRecord(String entity) throws UnknownHostException, TextParseException {
+        final Lookup lookUp = new Lookup(entity, Type.TXT);
+        Record[] records = lookUp.run();
+        if (records == null) {
+            throw new UnknownHostException();
+        }
+        return ((TXTRecord) records[0]).getStrings().toString();
+    }
+
     public static Boolean isDomainValid(String domainName) {  //DomainValidator apache
-        DomainValidator domainValidator = DomainValidator.getInstance(true);
+            DomainValidator domainValidator = DomainValidator.getInstance(true);
         return domainValidator.isValid(domainName);
     }
 
