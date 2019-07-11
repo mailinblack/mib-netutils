@@ -1,0 +1,25 @@
+sudo: false
+
+language: java
+
+jdk:
+  - oraclejdk8
+  - openjdk11
+
+install: mvn install -U -DskipTests=true
+
+#after_success:
+#  - util/deploy_snapshot.sh
+#  - util/update_snapshot_docs.sh
+
+#after_failure:
+#  - util/print_surefire_reports.sh
+
+cache:
+  directories:
+    - $HOME/.m2
+
+branches:
+  only:
+    - master
+    - /^release.*$/
