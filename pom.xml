@@ -54,9 +54,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com:mailinblack/mib-jcl.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:mailinblack/mib-jcl.git</developerConnection>
-        <url>https://github.com/mailinblack/mib-jcl.git</url>
+        <connection>scm:git:ssh://git@github.com:mailinblack/mib-netutils.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:mailinblack/mib-netutils.git</developerConnection>
+        <url>https://github.com/mailinblack/mib-netutils.git</url>
     </scm>
 
     <modules>
