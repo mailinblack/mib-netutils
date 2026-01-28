@@ -4,6 +4,7 @@ import org.apache.commons.net.util.SubnetUtils;
 import org.apache.commons.validator.routines.DomainValidator;
 import org.apache.commons.validator.routines.InetAddressValidator;
 import org.xbill.DNS.*;
+import org.xbill.DNS.Record;
 
 import java.net.UnknownHostException;
 
@@ -30,7 +31,7 @@ public enum MibDomain {
         if (isBlank(cidr)) {
             return false;
         }
-        final String[] cidrSplited = cidr.split("\\/");
+        final String[] cidrSplited = cidr.split("/");
         if (cidrSplited.length != 2) {
             return false;
         }

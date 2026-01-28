@@ -10,7 +10,7 @@ pipeline {
     }
 
     tools {
-        jdk 'jdk8'
+        jdk 'jdk17'
         maven 'default'
     }
 
@@ -38,20 +38,6 @@ pipeline {
             }
         }
 
-        stage('[Publishing] Snapshot') {
-
-            when {
-                expression {
-                    return !params.releaseAndPublish
-                }
-            }
-
-            steps {
-                sh "mvn -DskipTests deploy"
-            }
-
-        }
-
         stage('[Publishing] Release and publish') {
 
             when {
@@ -61,8 +47,7 @@ pipeline {
             }
 
             steps {
-                // TODO
-                println("TODO")
+                sh "mvn -DskipTests deploy"
             }
 
         }

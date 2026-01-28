@@ -6,7 +6,7 @@
 
     <groupId>com.mailinblack</groupId>
     <artifactId>mib-netutils-parent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.1.0</version>
     <name>MIB Net Utils Libraries Maven Parent</name>
     <packaging>pom</packaging>
 
@@ -18,9 +18,9 @@
 
     <properties>
 
-        <java.version>1.8</java.version>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <maven.compiler.source>1.8</maven.compiler.source>
+        <java.version>17</java.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -45,11 +45,11 @@
         <!-- Test dependencies versions -->
 
         <slf4j.version>1.7.25</slf4j.version>
-        <junit.version>5.4.0</junit.version>
-        <assertj-core.version>3.12.0</assertj-core.version>
-        <mockito.version>2.24.5</mockito.version>
-        <javafaker.version>0.17.2</javafaker.version>
-        <guava.version>27.0.1-jre</guava.version>
+        <junit.version>5.14.2</junit.version>
+        <assertj-core.version>3.27.7</assertj-core.version>
+        <mockito.version>5.21.0</mockito.version>
+        <javafaker.version>1.0.2</javafaker.version>
+        <guava.version>33.5.0-jre</guava.version>
 
     </properties>
 
